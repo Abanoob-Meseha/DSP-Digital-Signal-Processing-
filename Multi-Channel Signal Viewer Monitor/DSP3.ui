@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1425</width>
+    <height>917</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="PLAY">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>670</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PLAY</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PAUSE">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>740</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PAUSE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ZOOMIN">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>690</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ZOOM IN</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ZOOMOUT">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>740</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ZOOM OUT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SPECTRO_PLAY">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>729</y>
+      <width>131</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>SPECTROGRAM</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="EXPORT">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>20</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EXPORT TO PDF</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SPEED_UP">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>690</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SPEED UP</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SPEED_DOWN">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>740</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SPEED DOWN</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="HIDE">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>740</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>HIDE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SHOW">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>690</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SHOW</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="SIGNAL_LABEL">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>70</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>ADD LABEL FOR SIGNAL :</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ADD">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>70</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ADD</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>130</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>SIGNAL</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>120</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>SPECTOGRAM</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="SIGNALS">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>19</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>SIGNAL 1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SIGNAL 2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SIGNAL 3</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="OPEN">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>20</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OPEN FILE</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="SPECTROGRAMS">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>669</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>SPECTROGRAM 1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SPECTROGRAM 2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SPECTROGRAM 3</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QSlider" name="verticalSlider_MIN">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>659</y>
+      <width>22</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="verticalSlider_MAX">
+    <property name="geometry">
+     <rect>
+      <x>1220</x>
+      <y>659</y>
+      <width>22</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>830</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MIN</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>1220</x>
+      <y>830</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MAX</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="horizontalScrollBar">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>640</y>
+      <width>881</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="COLOR_PALETTE">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>670</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>PALETTE 1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PALETTE 2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PALETTE 3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PALETTE 4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PALETTE 5</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="CLEAR">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>810</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>CLEAR</string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="verticalScrollBar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>20</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="COLORS">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>710</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>BLUE</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GREEN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RED</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="SETCOLOR">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>710</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SET COLOR</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>660</y>
+      <width>20</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>180</y>
+      <width>1381</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QGraphicsView" name="graphicsView"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget_2">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QGraphicsView" name="graphicsView_2"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1425</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
